@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Nav*/
+.nav {
+    min-height: 42px;
+    background-color: #ef5122;
+    display: flex;
+    justify-content: space-between; /*space-between dùng để đẩy 2 thẻ điv sang 2 bên trái và phải*/
+}
+
+.nav-list {
+    padding-left: 0;
+    margin: auto 16px;
+}
+
+.nav-item {
+    color: #fff;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}
+
+/*form layout*/
+
+.form-container {
+    min-width: 720px;
+    padding: 32px;
+    margin: 36px auto 0 auto;
+    background-color: #ccc;
+}
+
+.form-row {
+    padding: 8px 0;
+    display: flex;
+}
+
+.form-label {
+    min-width: 90px;
+}
+
+.form-input {
+    flex: 1; /*có tác dụng kéo dài hết cỡ thanh input ra 2 bên*/
+}
+
+/*colum-layout*/
+
+.colum-layout {
+    margin-top: 36px;
+    padding: 12px 0;
+    background-color: #ccc;
+    display:  flex;
+}
+
+.column-item {
+    padding: 0 16px;
+}
+
+.sidebar-one {
+    flex: 1;
+}
+
+.main-column {
+    flex: 3;
+}
+
+.sidebar-two {
+    flex: 1;
+}
+
+
+/*Feature-layout*/
+
+.Feature-layout {
+    margin-top: 36px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-around;/*cách nhau 2 cạnh của web ngoài ra còn space-evenly cách đều nhau*/
+}
+
+.feature-item {
+    padding: 12px 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    flex-basis: 30%; /*chia 3 ông feature-item làm 3 mỗi ông 30% */
+    
+}
+
+.feature-item:nth-child(1) {
+    background-color: rgb(131, 235, 235);
+    
+}
+
+.feature-item:nth-child(2) {
+    background-color: rgb(245, 171, 145);
+    
+}
+
+.feature-item:nth-child(3) {
+    background-color: rgb(231, 176, 231);
+    
+    
+}
+
+
+/*    wrap-layout*/
+
+.wrap-layout {
+    background-color: #ccc;
+    margin-top: 36px;
+    padding: 12px 0 32px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /*giúp xuống dòng các khối div khi chuyển sang ipad or điện thoại*/
+}
+
+.wrap-layout-item {
+    width: 148px;
+    height: 90px;
+    color: #000;
+    text-align: center;
+    line-height: 90px;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 20px;
+    background-color: #ef5122;
+}
+
+
+/*Center-layout*/
+
+.Center-layout {
+    background-color: rgb(227, 233, 231);
+    margin: 36px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 640px;
+    height: 360px;
+    display: flex;
+}
+
+.Center-layout-item {
+    font-size: 42px;
+    font-weight: 700;
+    margin: auto; /*căn chữ ở chính giữa khối thì thẻ cha cần có display: flex và thẻ con để margin: auto*/
+
+}
+
+/*chart-layout*/
+
+.chart-layout {
+    margin: 36px auto 0 auto;
+    padding: 32px 0;
+    height: 320px;
+    background-color: #ccc;
+    display: flex;
+    /*align-items: flex-end; giống như align-self: flex-end;  khác nhau chỗ  align-items đặt ở thằng chia align-self đặt ở chính nó*/
+    justify-content: space-around;
+}
+
+.chart-layout-item {
+    align-self: flex-end;  
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    height: var(--percent);
+    background-color: #ef5122;
+    animation: growth ease-in 0.5s;
+}
+
+@keyframes growth {
+    form {
+        opacity: 0;
+        height: 50%; /*calc(var(--percent) - 50%)*/
+    }
+
+    to {
+        opacity: 1;
+        height: 100%;/*var(--percent)*/
+    }
+}
+
+
+/*END*/
+
+
+.end {
+    margin: 12px auto 48px auto;
+    padding: 32px 0;
+    max-width: 740px;
+    min-height: 360px;
+    display: flex;
+    flex-direction: row-reverse;/*row-reverse dùng để đổi chỗ 2 thẻ div cho nhau*/
+}
+
+.end-1 {
+    padding: 4px 16px;
+    background-color: #ccc;
+    flex: 1;
+}
+
+.end-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.end-1-1 {
+    flex: 1;
+
+    padding: 4px 16px;
+    background-color: rgb(238, 228, 238);
+}
+
+.end-1-2 {
+    flex: 1;
+
+    padding: 4px 16px;
+    background-color: rgb(213, 238, 235);
+}

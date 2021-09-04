@@ -1,0 +1,84 @@
+
+/*Mobile*/
+@media (max-width: 740px) {
+    #header {
+        overflow: hidden;
+    }
+    
+    #nav {
+        display: block;
+    }
+
+    #nav li {
+        display: block;
+    }
+
+    
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding-left: 40px;
+        line-height: 48px;
+    }
+
+    #nav > li:first-child { /*lấy trực tiếp thằng li đầu tiên của cha nó*/
+        display: inline-block;
+    }
+
+   
+    #header .search-btn {
+        display: none;
+    }
+
+    #header .mobile-menu {
+        display: block;
+    }
+
+    #content .member-item {
+        width: 100%;
+        margin-bottom: 31px;
+    }
+
+    #content .avatar {
+        width: 60%;
+    }
+    
+    #content .list-city {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    #content .contac-info {
+        width: -50%;
+    }
+
+    
+    #content .tour-section {
+        margin-top: -65px;
+    }
+
+    #content .contac-info {
+        width: 100%;
+    }
+
+    #content .col-half {
+        width: 100%;
+    }
+
+    #content .mg-t-8-mobile {
+        margin-top: 8px;
+    }
+
+    #content .mg-t-16-mobile {
+        margin-top: 16px;
+    }
+    
+    #content .contact-send {
+        width: 100%;
+    }
+}
